@@ -6,6 +6,13 @@ module.exports = {
     title: config.siteTitle,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -25,6 +32,8 @@ module.exports = {
         implementation: require('sass'),
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-offline',
   ],
 };
