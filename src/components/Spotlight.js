@@ -6,10 +6,9 @@ import bearcroft from '../assets/images/bearcroft.png';
 const Spotlight = ({ imageSrc, title, subtitle, to }) => (
   <section className="spotlight">
     <div className="image">
-      {/* <Link to={to}> */}
-      <Img fluid={imageSrc.childImageSharp.fluid} alt="" />
-      {/* <img src={bearcroft} /> */}
-      {/* </Link> */}
+      <Link to={to}>
+        <Img fluid={imageSrc.childImageSharp.fluid} alt="" />
+      </Link>
     </div>
     <div className="content">
       <h2>{title}</h2>

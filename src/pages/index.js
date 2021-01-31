@@ -4,8 +4,6 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-// import IllustrationPic from '../assets/images/illustration.png';
-// import BearCroft from '../assets/images/bearcroft.png';
 import config from '../../config';
 
 import { Spotlight } from '../components/Spotlight';
@@ -90,7 +88,7 @@ const IndexPage = () => {
           imageSrc={bearcroft}
           title={'Title'}
           subtitle={'subtitle'}
-          to="/Generic"
+          to="/logo-design"
         />
         <Spotlight
           imageSrc={bearcroft}
