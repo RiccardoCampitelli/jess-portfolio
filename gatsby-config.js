@@ -20,6 +20,20 @@ module.exports = {
         path: `${__dirname}/src/assets/logo-design`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'webdesign',
+        path: `${__dirname}/src/assets/logo-design`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'illustrations',
+        path: `${__dirname}/src/assets/logo-design`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

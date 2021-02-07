@@ -11,23 +11,23 @@ module.exports = {
   heading: 'Jessica Evans',
   subHeading: 'Graphic Designer',
   socialLinks: [
-    {
-      style: 'brands',
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      style: 'brands',
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      style: 'solid',
-      icon: 'fa-envelope',
-      name: 'Email',
-      url: 'mailto:test@example.com',
-    },
+    // {
+    //   style: 'brands',
+    //   icon: 'fa-github',
+    //   name: 'Github',
+    //   url: 'https://github.com/anubhavsrivastava',
+    // },
+    // {
+    //   style: 'brands',
+    //   icon: 'fa-twitter',
+    //   name: 'Twitter',
+    //   url: 'https://twitter.com/onlyanubhav',
+    // },
+    // {
+    //   style: 'solid',
+    //   icon: 'fa-envelope',
+    //   name: 'Email',
+    //   url: 'mailto:test@example.com',
+    // },
   ],
 };

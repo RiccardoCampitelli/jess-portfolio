@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import bearcroft from '../assets/images/bearcroft.png';
 
 const Spotlight = ({ imageSrc, title, subtitle, to }) => (
   <section className="spotlight">

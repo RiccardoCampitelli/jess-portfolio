@@ -657,14 +657,14 @@ input[type='radio'] {
 .box {
   border-radius: 3px;
   border: solid 2px _palette(border);
-  margin-bottom: _size(element-margin);
+  // margin-bottom: _size(element-margin);
   padding: 1.5em;
 
-  > :last-child,
-  > :last-child > :last-child,
-  > :last-child > :last-child > :last-child {
-    margin-bottom: 0;
-  }
+  // > :last-child,
+  // > :last-child > :last-child,
+  // > :last-child > :last-child > :last-child {
+  //   margin-bottom: 0;
+  // }
 
   &.alt {
     border: 0;
@@ -1192,7 +1192,7 @@ button,
   .image {
     @include vendor('order', '1');
     border-radius: 0;
-    width: 40%;
+    width: 70%;
 
     img {
       border-radius: 0;
@@ -1204,7 +1204,7 @@ button,
     @include padding(2em, 4em);
     @include vendor('order', '2');
     max-width: 48em;
-    width: 60%;
+    width: 30%;
   }
 
   &:nth-child(2n) {
@@ -1225,7 +1225,7 @@ button,
     }
 
     .content {
-      width: 55%;
+      width: 30%;
     }
   }
 
@@ -1495,6 +1495,8 @@ button,
 
   &.style5 {
     @include wrapper(accent7);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   @include breakpoint('<=medium') {
@@ -2096,5 +2098,22 @@ body.is-mobile {
     #footer {
       background-color: darken(_palette(bg), 8);
     }
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-image {
+  width: 30%;
+  margin: 5px 5px 5px 5px;
+
+  @include breakpoint('<=small') {
+   width: 100%;
+  margin: 5px 0px;
   }
 }
