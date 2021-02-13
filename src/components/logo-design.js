@@ -5,16 +5,25 @@ import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const query = graphql`
-  {
-    allFile(filter: { sourceInstanceName: { eq: "logos" } }) {
-      edges {
-        node {
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+  query {
+    bearcroft: file(relativePath: { eq: "Logo_Bearcroft.webp" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    blackArchive: file(relativePath: { eq: "Logo_Black-Archive.webp" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    parson: file(relativePath: { eq: "Logo_parson.webp" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -22,9 +31,9 @@ const query = graphql`
 `;
 
 const LogoDesign = () => {
-  const { allFile } = useStaticQuery(query);
+  const { bearcroft, blackArchive, parson } = useStaticQuery(query);
 
-  const images = allFile.edges.map(({ node }) => node.childImageSharp);
+  const images = [blackArchive, bearcroft, parson];
 
   return (
     <div className="box alt">
@@ -32,7 +41,7 @@ const LogoDesign = () => {
         {images.map(source => (
           <div className="content-image">
             <span className="image fit">
-              <Img fluid={source.fluid} />
+              <Img fluid={source.childImageSharp.fluid} />
             </span>
           </div>
         ))}

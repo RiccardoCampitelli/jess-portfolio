@@ -1881,8 +1881,8 @@ body.is-preload,
 
     header {
       @include vendor('order', '1');
-      padding-right: 3em;
-      width: 70%;
+      // padding-right: 3em;
+      // width: 70%;
 
       p {
         color: inherit;
@@ -2101,6 +2101,14 @@ body.is-mobile {
   }
 }
 
+.align-text-center {
+  text-align: center;
+}
+
+.contact-header {
+  flex: 1 1 auto;
+}
+
 .content-container {
   display: flex;
   flex-wrap: wrap;
@@ -2110,7 +2118,7 @@ body.is-mobile {
 
 .content-image {
   width: 30%;
-  margin: 5px 5px 5px 5px;
+  margin: 10px 10px 10px 10px;
 
   @include breakpoint('<=small') {
    width: 100%;

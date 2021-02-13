@@ -60,7 +60,6 @@ class Layout extends Component {
               }
             >
               <div id="page-wrapper">
-                <SideBar fullMenu={fullMenu} />
                 {children}
                 <Footer />
               </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
-  <Layout fullMenu>
+  <Layout>
     <article id="main">
       <header>
         <h2>Not Found</h2>

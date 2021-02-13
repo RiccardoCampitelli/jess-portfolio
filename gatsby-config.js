@@ -24,14 +24,14 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'webdesign',
-        path: `${__dirname}/src/assets/logo-design`,
+        path: `${__dirname}/src/assets/web-design`,
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'illustrations',
-        path: `${__dirname}/src/assets/logo-design`,
+        path: `${__dirname}/src/assets/illustrations`,
       },
     },
     'gatsby-plugin-react-helmet',
