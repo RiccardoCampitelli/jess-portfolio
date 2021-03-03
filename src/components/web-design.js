@@ -5,16 +5,25 @@ import Img from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const query = graphql`
-  {
-    allFile(filter: { sourceInstanceName: { eq: "webdesign" } }) {
-      edges {
-        node {
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+  query {
+    desktop: file(relativePath: { eq: "desktop.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    laptop: file(relativePath: { eq: "laptop.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tablet: file(relativePath: { eq: "tablet.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -22,9 +31,9 @@ const query = graphql`
 `;
 
 const WebDesign = () => {
-  const { allFile } = useStaticQuery(query);
+  const { desktop, laptop, tablet } = useStaticQuery(query);
 
-  const images = allFile.edges.map(({ node }) => node.childImageSharp);
+  const images = [tablet, laptop, desktop];
 
   return (
     <div className="box alt">
@@ -32,7 +41,7 @@ const WebDesign = () => {
         {images.map(source => (
           <div className="content-image">
             <span className="image fit">
-              <Img fluid={source.fluid} />
+              <Img fluid={source.childImageSharp.fluid} />
             </span>
           </div>
         ))}

@@ -6,21 +6,21 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const query = graphql`
   query {
-    bearcroft: file(relativePath: { eq: "Logo_Bearcroft.webp" }) {
+    bearcroft: file(relativePath: { eq: "bearcroft-logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    blackArchive: file(relativePath: { eq: "Logo_Black-Archive.webp" }) {
+    blackArchive: file(relativePath: { eq: "black-archive.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    parson: file(relativePath: { eq: "Logo_parson.webp" }) {
+    parson: file(relativePath: { eq: "parson.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
@@ -33,7 +33,7 @@ const query = graphql`
 const LogoDesign = () => {
   const { bearcroft, blackArchive, parson } = useStaticQuery(query);
 
-  const images = [blackArchive, bearcroft, parson];
+  const images = [bearcroft, blackArchive, parson];
 
   return (
     <div className="box alt">
