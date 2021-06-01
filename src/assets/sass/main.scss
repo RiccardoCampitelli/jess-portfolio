@@ -2116,12 +2116,70 @@ body.is-mobile {
   justify-content: center;
 }
 
+.content-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .content-image {
   width: 30%;
   margin: 10px 10px 10px 10px;
 
   @include breakpoint('<=small') {
-   width: 100%;
-  margin: 5px 0px;
+    width: 100%;
+    margin: 5px 0px;
   }
+}
+
+.content-showcase-image {
+  width: 60%;
+  margin: 10px 10px 10px 10px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+.content-image-duo {
+  width: 40%;
+  height: 100%;
+
+  margin: 15px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+.content-cg {
+  width: 70%;
+  height: 100%;
+
+  margin: 15px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+.content-image-mobile {
+  width: 25%;
+  height: 100%;
+
+  margin: 15px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+.mt {
+  margin-top: 6rem;
 }

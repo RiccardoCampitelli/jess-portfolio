@@ -7,6 +7,7 @@ import WebDesign from '../components/web-design';
 import Illustrations from '../components/illustrations';
 
 import config from '../../config';
+import Showcase from '../components/showcase';
 
 const IndexPage = () => {
   return (
@@ -25,9 +26,7 @@ const IndexPage = () => {
 
       <section id="two" className="wrapper alt style5">
         <div className="inner">
-          <Illustrations />
-          <LogoDesign />
-          <WebDesign />
+          <Showcase />
         </div>
       </section>
 
