@@ -2136,7 +2136,20 @@ body.is-mobile {
 
 .content-showcase-image {
   width: 60%;
+  height: 500px;
   margin: 10px 10px 10px 10px;
+
+  background-color: #bfdce0;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+
+  border-radius: 15px;
 
   @include breakpoint('<=small') {
     width: 100%;
@@ -2182,4 +2195,10 @@ body.is-mobile {
 
 .mt {
   margin-top: 6rem;
+}
+
+.main-image {
+  // img {
+  //   height: 400px;
+  // }
 }

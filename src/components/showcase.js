@@ -46,7 +46,12 @@ const Showcase = () => {
           <div className="content-showcase-image">
             <span className="image fit">
               <Link to={source.path}>
-                <Img fluid={source.image.childImageSharp.fluid} />
+                <Img
+                  className="main-image"
+                  imgStyle={{ objectFit: 'contain' }}
+                  style={{ height: '400px', width: '100%' }}
+                  fluid={source.image.childImageSharp.fluid}
+                />
               </Link>
             </span>
           </div>

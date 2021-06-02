@@ -3,8 +3,9 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import ContactFooter from '../components/ContactFooter';
 
 const query = graphql`
   query {
@@ -53,6 +54,18 @@ const CaitlinGallagher = () => {
       <section id="banner">
         <div className="inner">
           <h2>CaitlinGallagher</h2>
+
+          <div className="content-container">
+            <Link to="/">
+              <h4>Projects</h4>
+            </Link>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <Scroll type="id" element="cta">
+              <a href="#cta">
+                <h4>Contact</h4>
+              </a>
+            </Scroll>
+          </div>
         </div>
         <Scroll type="id" element="two">
           <a href="#two" className="more">
@@ -83,6 +96,7 @@ const CaitlinGallagher = () => {
           </div>
         </div>
       </section>
+      <ContactFooter />
     </Layout>
   );
 };
