@@ -13,6 +13,13 @@ const query = graphql`
         }
       }
     }
+    safariHeader: file(relativePath: { eq: "silver-mac.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     cm365Header: file(relativePath: { eq: "cm365-header.png" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
@@ -31,7 +38,9 @@ const query = graphql`
 `;
 
 const Showcase = () => {
-  const { nodeHeader, cm365Header, cgHeader } = useStaticQuery(query);
+  const { nodeHeader, cm365Header, cgHeader, safariHeader } = useStaticQuery(
+    query
+  );
 
   const images = [
     { image: nodeHeader, path: 'node' },
@@ -56,6 +65,18 @@ const Showcase = () => {
             </span>
           </div>
         ))}
+        <div className="content-showcase-image">
+          <span className="image fit">
+            <a href="https://go2africa1.wordpress.com/" target="_blank">
+              <Img
+                className="main-image"
+                imgStyle={{ objectFit: 'contain' }}
+                style={{ height: '400px', width: '100%' }}
+                fluid={safariHeader.childImageSharp.fluid}
+              />
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   );
