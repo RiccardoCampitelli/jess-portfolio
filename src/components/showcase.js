@@ -96,12 +96,12 @@ const Showcase = () => {
     {
       image: nodeHeader,
       path: 'node',
-      message: 'Web Digital Print & Branding',
+      message: 'Web, Digital, Print & Branding',
     },
     {
       image: cm365Header,
       path: 'cyberman',
-      message: 'Web Digital Print & Branding',
+      message: 'Web, Digital, Print & Branding',
     },
     {
       image: cgHeader,
