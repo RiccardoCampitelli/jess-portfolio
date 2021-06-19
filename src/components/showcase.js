@@ -68,7 +68,6 @@ const ShowcaseItem = ({ source, internal = false }) => {
           </Link>
         )}
         {!internal && (
-          <div className="content-showcase-image">
             <span className="image fit">
               <a href="https://go2africa1.wordpress.com/" target="_blank">
                 <Img
@@ -79,7 +78,6 @@ const ShowcaseItem = ({ source, internal = false }) => {
                 />
               </a>
             </span>
-          </div>
         )}
       </span>
       <Overlay show={showOverlay} message={source.message} />
