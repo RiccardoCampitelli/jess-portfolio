@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Img from 'gatsby-image';
 
@@ -37,46 +37,89 @@ const query = graphql`
   }
 `;
 
-const Showcase = () => {
-  const { nodeHeader, cm365Header, cgHeader, safariHeader } = useStaticQuery(
-    query
-  );
+const Overlay = ({ show, message }) => (
+  <div className={`overlay-container ${show ? 'show' : 'hide'}`}>
+    <div className="overlay">{message}</div>;
+  </div>
+);
 
-  const images = [
-    { image: nodeHeader, path: 'node' },
-    { image: cm365Header, path: 'cyberman' },
-    { image: cgHeader, path: 'caitlinghallagher' },
-  ];
+const ShowcaseItem = ({ source, internal = false }) => {
+  const [showOverlay, setShowOverlay] = useState(false);
+
+  const overlayVisible = () => setShowOverlay(true);
+
+  const hideOverlay = () => setShowOverlay(false);
 
   return (
-    <div className="box alt">
-      <div className="content-container">
-        {images.map(source => (
+    <div
+      className="content-showcase-image"
+      onMouseEnter={overlayVisible}
+      onMouseLeave={hideOverlay}
+    >
+      <span className="image fit">
+        {internal && (
+          <Link to={source.path}>
+            <Img
+              className="main-image"
+              imgStyle={{ objectFit: 'contain' }}
+              style={{ height: '400px', width: '100%' }}
+              fluid={source.image.childImageSharp.fluid}
+            />
+          </Link>
+        )}
+        {!internal && (
           <div className="content-showcase-image">
             <span className="image fit">
-              <Link to={source.path}>
+              <a href="https://go2africa1.wordpress.com/" target="_blank">
                 <Img
                   className="main-image"
                   imgStyle={{ objectFit: 'contain' }}
                   style={{ height: '400px', width: '100%' }}
                   fluid={source.image.childImageSharp.fluid}
                 />
-              </Link>
+              </a>
             </span>
           </div>
+        )}
+      </span>
+      <Overlay show={showOverlay} message={source.message} />
+    </div>
+  );
+};
+
+const Showcase = () => {
+  const { nodeHeader, cm365Header, cgHeader, safariHeader } = useStaticQuery(
+    query
+  );
+
+  const images = [
+    {
+      image: nodeHeader,
+      path: 'node',
+      message: 'Web Digital Print & Branding',
+    },
+    {
+      image: cm365Header,
+      path: 'cyberman',
+      message: 'Web Digital Print & Branding',
+    },
+    {
+      image: cgHeader,
+      path: 'caitlinghallagher',
+      message: 'Logo Design & Branding',
+    },
+  ];
+
+  return (
+    <div className="box alt">
+      <div className="content-container">
+        {images.map(source => (
+          <ShowcaseItem source={source} message="message" />
         ))}
-        <div className="content-showcase-image">
-          <span className="image fit">
-            <a href="https://go2africa1.wordpress.com/" target="_blank">
-              <Img
-                className="main-image"
-                imgStyle={{ objectFit: 'contain' }}
-                style={{ height: '400px', width: '100%' }}
-                fluid={safariHeader.childImageSharp.fluid}
-              />
-            </a>
-          </span>
-        </div>
+        <ShowcaseItem
+          source={{ image: safariHeader, message: 'Web Design' }}
+          internal={false}
+        />
       </div>
     </div>
   );

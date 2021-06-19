@@ -2111,6 +2111,7 @@ body.is-mobile {
 
 .content-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -2135,13 +2136,16 @@ body.is-mobile {
 }
 
 .content-showcase-image {
-  width: 60%;
+  width: 500px;
   height: 500px;
   margin: 10px 10px 10px 10px;
 
   background-color: #bfdce0;
 
   display: flex;
+
+  position: relative;
+  overflow: hidden;
 
   flex-direction: column;
   justify-content: center;
@@ -2201,4 +2205,43 @@ body.is-mobile {
   // img {
   //   height: 400px;
   // }
+}
+
+.overlay {
+  color: white;
+
+  position: absolute;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%);
+
+  font-size: x-large;
+}
+
+.overlay-container {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+  transition: opacity 0.5s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
 }
