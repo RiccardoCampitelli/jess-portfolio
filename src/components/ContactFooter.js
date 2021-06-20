@@ -11,7 +11,7 @@ const ContactFooter = () => (
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-linkedin-in fa-2x"></i>
+            <i className="fab fa-linkedin-in fa-2x"></i>
           </a>
           <a
             href="mailto:jessica.e.evans21@gmail.com"
@@ -19,7 +19,7 @@ const ContactFooter = () => (
             rel="noreferrer"
             style={{ marginLeft: '2rem' }}
           >
-            <i class="far fa-envelope fa-2x"></i>
+            <i className="far fa-envelope fa-2x"></i>
           </a>
         </p>
       </header>

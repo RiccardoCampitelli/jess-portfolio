@@ -43,45 +43,53 @@ const Overlay = ({ show, message }) => (
   </div>
 );
 
-const ShowcaseItem = ({ source, internal = false }) => {
+const ShowcaseItem = ({ source, internal = true }) => {
   const [showOverlay, setShowOverlay] = useState(false);
 
   const overlayVisible = () => setShowOverlay(true);
 
   const hideOverlay = () => setShowOverlay(false);
 
+  const WrapperComponent = ({ internal, children }) => {
+    return internal ? (
+      <Link to={source.path}>{children}</Link>
+    ) : (
+      <a href="https://go2africa1.wordpress.com/" target="_blank">
+        {children}
+      </a>
+    );
+  };
+
   return (
-    <div
-      className="content-showcase-image"
-      onMouseEnter={overlayVisible}
-      onMouseLeave={hideOverlay}
-    >
-      <span className="image fit">
-        {internal && (
-          <Link to={source.path}>
+    <WrapperComponent internal={internal}>
+      <div
+        className="content-showcase-image"
+        onMouseEnter={overlayVisible}
+        onMouseLeave={hideOverlay}
+      >
+        <span className="image fit">
+          {internal && (
             <Img
               className="main-image"
               imgStyle={{ objectFit: 'contain' }}
               style={{ height: '400px', width: '100%' }}
               fluid={source.image.childImageSharp.fluid}
             />
-          </Link>
-        )}
-        {!internal && (
+          )}
+          {!internal && (
             <span className="image fit">
-              <a href="https://go2africa1.wordpress.com/" target="_blank">
-                <Img
-                  className="main-image"
-                  imgStyle={{ objectFit: 'contain' }}
-                  style={{ height: '400px', width: '100%' }}
-                  fluid={source.image.childImageSharp.fluid}
-                />
-              </a>
+              <Img
+                className="main-image"
+                imgStyle={{ objectFit: 'contain' }}
+                style={{ height: '400px', width: '100%' }}
+                fluid={source.image.childImageSharp.fluid}
+              />
             </span>
-        )}
-      </span>
-      <Overlay show={showOverlay} message={source.message} />
-    </div>
+          )}
+        </span>
+        <Overlay show={showOverlay} message={source.message} />
+      </div>
+    </WrapperComponent>
   );
 };
 
@@ -111,8 +119,8 @@ const Showcase = () => {
   return (
     <div className="box alt">
       <div className="content-container">
-        {images.map(source => (
-          <ShowcaseItem source={source} message="message" />
+        {images.map((source, idx) => (
+          <ShowcaseItem key={idx} source={source} message="message" />
         ))}
         <ShowcaseItem
           source={{ image: safariHeader, message: 'Web Design' }}
