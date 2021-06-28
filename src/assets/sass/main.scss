@@ -2245,3 +2245,46 @@ body.is-mobile {
 .hide {
   opacity: 0;
 }
+
+// .dark {
+//   background-color: grey;
+// }
+
+.title {
+  text-align: center;
+}
+
+.description-container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+
+  @include breakpoint('<=small') {
+    flex-direction: column;
+    justify-self: start;
+  }
+}
+
+.description-item {
+  width: 700px;
+
+  margin: 20px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px 5px;
+  }
+}
+
+.description-ul {
+  > li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.margin-top {
+  margin-top: 70px;
+}

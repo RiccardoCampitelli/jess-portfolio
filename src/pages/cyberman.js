@@ -108,6 +108,94 @@ const Cyberman = () => {
             <Img fluid={cm365Header.childImageSharp.fluid} />
           </span>
         </div>
+        <article>
+          <h2 className="title">Cyberman365</h2>
+          <h5 className="title">
+            Visual Identity and branding | Editorial and Marketing | Web
+            design/UX &amp; UI | Social media
+          </h5>
+
+          <div className="description-container-row margin-top">
+            <div className="description-item">
+              <h4>Brief</h4>
+              <p>
+                Cyberman365 is a personal cyber insurance product from Node
+                International, a cyber insurance company, for the American
+                market. The task was to create all the materials needed to
+                launch in 6 months and then ongoing support. I worked here as an
+                in-house designer.
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>Unique Solution</h4>
+              <p>
+                There were no other known competitors for the HomeSafe (similar
+                to antivirus but for household internet-connected devices) side
+                of the product so this was a chance to stand out using product
+                mock-ups. I delivered brand identity and guidelines, marketing
+                editorial materials, digital assets such as social media and
+                responsive landing pages, one for brokers and one for consumers.
+              </p>
+            </div>
+          </div>
+
+          <div className="description-container-row">
+            <div className="description-item">
+              <h4>Challenges</h4>
+              <p>
+                <ul className="description-ul">
+                  <li>
+                    Cyberman365 needed a clear message and visual identity,
+                    ensuring the potential customer understood the product as
+                    personal cyber insurance isn’t well known. The logo colour
+                    was a challenge to match as a colour that often clashes with
+                    others.
+                  </li>
+                  <li>
+                    Cyberman365 uses external partners to provide their services
+                    but one of the services wasn’t white labelled. This
+                    turquoise partner branding was sure to confuse customers.
+                    Unfortunately, this couldn’t be avoided due to a tight
+                    budget so as a compromised I suggested including the
+                    Cyberman365 logo.
+                  </li>
+                  <li>
+                    After creating marketing materials, based on broker
+                    interviews on their sales process, they were slow in getting
+                    the product off the ground. This slow adaption of new
+                    products is common across the industry.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>The Result</h4>
+              <p>
+                <ul className="description-ul">
+                  <li>
+                    50+ brokers in a week registered their interest in selling
+                    the product using the landing page.
+                  </li>
+                  <li>
+                    Empowered the Sales team with new marketing materials,
+                    bringing onboard 40+ new brokers.
+                  </li>
+                  <li>
+                    LinkedIn content saw follower count grow from 0 to 100+ in 6
+                    months with some posts reaching creating high engagement
+                    statistics.
+                  </li>
+
+                  <li>
+                    Insurance materials were designed with ease in mind
+                    featuring e-signs and interactive features to improve
+                    usability and reduce friction.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </article>
         <div className="content-container mt">
           <div className="content-image-duo">
             <Img fluid={cm365Web1.childImageSharp.fluid} />

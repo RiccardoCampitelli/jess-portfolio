@@ -84,6 +84,98 @@ const Node = () => {
             <Img fluid={nodeHeader.childImageSharp.fluid} />
           </span>
         </div>
+        <article>
+          <h2 className="title">Node International</h2>
+          <h5 className="title">
+            Visual Identity and branding | Editorial and Marketing | Web
+            design/UX &amp; UI | Social media
+          </h5>
+
+          <div className="description-container-row margin-top">
+            <div className="description-item">
+              <h4>Brief</h4>
+              <p>
+                Node International is a cyber insurance start-up, based in
+                London with a strong focus on North America, who wants to stand
+                out from the corporate world of insurance with forward-thinking
+                ideas and a strong digital design presence. As a B2B business
+                they’re sold through insurance brokers; I worked here as an
+                in-house designer.
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>Unique Solution</h4>
+              <p>
+                To enable Node to stand out from the crowd in a saturated market
+                with a strong digital presence, a USP by providing additional
+                prevention and detection, and user-friendly designs, bringing
+                insurance to the 20th century. Delivered through brand
+                guidelines, a responsive website, interactive pdfs, social media
+                graphics and more with consistent online branding.
+              </p>
+            </div>
+          </div>
+
+          <div className="description-container-row">
+            <div className="description-item">
+              <h4>Challenges</h4>
+              <p>
+                <ul className="description-ul">
+                  <li>
+                    Communicating Node’s values and a clear message was
+                    important when creating their branding strategy. There was a
+                    fine balance between differentiating in an over-saturated
+                    market and instilling trust and reliability, the latter is
+                    essential in insurance.
+                  </li>
+                  <li>
+                    For the marketing materials, I’d already defined the
+                    guidelines, so they weren’t too tricky to create. However,
+                    deciding what materials were needed with the Sales and
+                    Underwriting team was more of a task.
+                  </li>
+                  <li>
+                    45 days to complete a website overhaul, new design, site map
+                    including copy, created in Wordpress (which I quickly learnt
+                    on the job) so it was more accessible for employees who
+                    don’t know code.
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>The Result</h4>
+              <p>
+                <ul className="description-ul">
+                  <li>
+                    Fast forward a year, the website is pulling in triple the
+                    number of web impressions.
+                  </li>
+                  <li>
+                    The Sales team is empowered with their new marketing
+                    materials, bringing onboard 200+ new brokers.
+                  </li>
+                  <li>
+                    Node’s followers grew x5 with some posts reaching engagement
+                    highs of 15%! (2% average). Overall, consistently achieving
+                    high engagement.
+                  </li>
+
+                  <li>
+                    Established Node as a trusted market leader with quotes
+                    hitting record highs. They also received positive comments
+                    externally on the marketing materials, website, and social
+                    media content.
+                  </li>
+                  <li>
+                    User-friendly materials increased the turnaround of quotes
+                    and purchases.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </article>
         <div className="content-container mt">
           <div className="content-image-duo">
             <Img fluid={nodeWeb1.childImageSharp.fluid} />

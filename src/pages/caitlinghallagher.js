@@ -81,6 +81,52 @@ const CaitlinGallagher = () => {
             </span>
           </div>
         </div>
+        <article>
+          <h2 className="title">Caitlin Gallagher</h2>
+          <h5 className="title">Visual Identity and branding | Digital</h5>
+
+          <div className="description-container-row margin-top">
+            <div className="description-item">
+              <h4>Brief</h4>
+              <p>
+                Caitlin Gallagher approached me with the desire to build up her
+                own personal brand as a book reviewer, reaching her target
+                audience through Instagram and YouTube.
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>Unique Solution</h4>
+              <p>
+                Launch a brand with a cohesive look and feel, allowing the
+                reader to instantly form a connection with followers and be
+                memorable. The logo identity and branding reflect Caitlin’s
+                personality and her brand. On the social media side, to design a
+                reusable YouTube thumbnail template and Instagram social media
+                template.
+              </p>
+            </div>
+          </div>
+
+          <div className="description-container-row">
+            <div className="description-item">
+              <h4>Challenges</h4>
+              <p>
+                To reflect Caitlin’s personality as a book reviewer through the
+                logo and brand identity. Combining illustration, images and
+                vectors in a logo design felt like a risk but it paid off.
+              </p>
+            </div>
+            <div className="description-item">
+              <h4>The Result</h4>
+              <p>
+                Caitlin Gallagher launched her Instagram and YouTube channel
+                with a strong brand strategy and guidelines, receiving 50+ likes
+                on her first few posts. Pleased with her branding, she would now
+                like a website to post written book reviews.
+              </p>
+            </div>
+          </div>
+        </article>
         <div className="content-container mt">
           <div className="content-image-duo">
             <Img fluid={cg1.childImageSharp.fluid} />
