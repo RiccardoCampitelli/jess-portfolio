@@ -52,9 +52,15 @@ const ShowcaseItem = ({ source, internal = true }) => {
 
   const WrapperComponent = ({ internal, children }) => {
     return internal ? (
-      <Link to={source.path}>{children}</Link>
+      <Link className="link-icon" to={source.path}>
+        {children}
+      </Link>
     ) : (
-      <a href="https://go2africa1.wordpress.com/" target="_blank">
+      <a
+        className="link-icon"
+        href="https://go2africa1.wordpress.com/"
+        target="_blank"
+      >
         {children}
       </a>
     );

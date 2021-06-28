@@ -2288,3 +2288,9 @@ body.is-mobile {
 .margin-top {
   margin-top: 70px;
 }
+
+.link-icon {
+  @include breakpoint('<=small') {
+    width: 100%;
+  }
+}
