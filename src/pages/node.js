@@ -176,20 +176,71 @@ const Node = () => {
             </div>
           </div>
         </article>
-        <div className="content-container mt">
-          <div className="content-image-duo">
-            <Img fluid={nodeWeb1.childImageSharp.fluid} />
+
+        <article className="grey internal-padding">
+          <div className="description-container-row margin-top max-width ml">
+            <div className="description-item">
+              <h4>Branding</h4>
+              <p>
+                Through my research, I discovered that the blue logo colour is
+                common with insurance companies, so I differentiated with unique
+                complementary colours, highlighting the added value of
+                Prevention and Detection alongside Insurance. The colours
+                reflect responsibility and reliability, essential for an
+                insurance company combined with a lighter blue, green and yellow
+                to show a more light-hearted, forward-thinking, less traditional
+                side.
+              </p>
+            </div>
+            <div className="content-column auto-margin">
+              <div className="description-item row limit-width">
+                <div className="square node-dark-blue mx"></div>
+                <div className="square node-blue mx"></div>
+                <div className="square node-green mx"></div>
+              </div>
+              <div className="description-item row limit-width">
+                <div className="square node-yellow mx"></div>
+                <div className="square node-blue mx"></div>
+              </div>
+            </div>
           </div>
-          <div className="content-image-duo">
-            <Img fluid={nodeWeb2.childImageSharp.fluid} />
+        </article>
+        <div className="content-column mt">
+          <div className="description-item max-width ml">
+            <h4>Website UX and UI</h4>
+            <p>
+              Considering UX and UI principles, I overhauled the old website
+              with a new site map, responsive design and branding to reflect the
+              new guidelines.
+            </p>
+          </div>
+          <div className="content-container max-width">
+            <div className="content-image-duo">
+              <Img fluid={nodeWeb1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-duo">
+              <Img fluid={nodeWeb2.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
-        <div className="content-container mt">
-          <div className="content-image-duo">
-            <Img fluid={nodePoster1.childImageSharp.fluid} />
+        <div className="content-column mt grey internal-padding">
+          <div className="description-item max-width ml">
+            <h4>Editorial and marketing</h4>
+            <p>
+              Previously working in Word, they needed a re-design with more
+              direction and consistency. I created over 20 files in just 2
+              months, alongside other tasks. This empowered the Sales team to
+              increase submissions and to be professional when issuing policy
+              documents to customers.
+            </p>
           </div>
-          <div className="content-image-duo">
-            <Img fluid={nodePoster2.childImageSharp.fluid} />
+          <div className="content-container max-width">
+            <div className="content-image-duo">
+              <Img fluid={nodePoster1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-duo">
+              <Img fluid={nodePoster2.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
       </section>

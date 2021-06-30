@@ -196,31 +196,89 @@ const Cyberman = () => {
             </div>
           </div>
         </article>
-        <div className="content-container mt">
-          <div className="content-image-duo">
-            <Img fluid={cm365Web1.childImageSharp.fluid} />
+
+        <article className="grey internal-padding">
+          <div className="description-container-row margin-top max-width ml">
+            <div className="description-item">
+              <h4>Branding</h4>
+              <p>
+                Cyberman365 is a personal cyber insurance product from Node
+                International, a cyber insurance company, for the American
+                market. The task was to create all the materials needed to
+                launch in 6 months and then ongoing support. I worked here as an
+                in-house designer.
+              </p>
+            </div>
+            <div className="content-column auto-margin">
+              <div className="description-item row limit-width">
+                <div className="square navy mx"></div>
+                <div className="square red mx"></div>
+                <div className="square maroon mx"></div>
+              </div>
+            </div>
           </div>
-          <div className="content-image-duo">
-            <Img fluid={cm365Web2.childImageSharp.fluid} />
+        </article>
+        <div className="content-column mt">
+          <div className="description-item max-width ml">
+            <h4>Landing page UX and UI</h4>
+            <p>
+              The landing page shows the services through product mockups so the
+              consumer has more trust that the product is designed well. High
+              contrasting colours help the information stand out. We enabled
+              brokers to add their logo on this page so that clients would have
+              trust in the landing page.
+            </p>
+          </div>
+          <div className="content-container max-width">
+            <div className="content-image-duo">
+              <Img fluid={cm365Web1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-duo">
+              <Img fluid={cm365Web2.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
-        <div className="content-container mt">
-          <div className="content-image-duo">
-            <Img fluid={cm365Flyer1.childImageSharp.fluid} />
+        <div className="content-column mt grey internal-padding">
+          <div className="description-item max-width ml">
+            <h4>Editorial and marketing</h4>
+            <p>
+              After researching competitors, I created some base materials. I
+              then interviewed brokers on their sales process to discover how we
+              could support them sell. I also created useful resources like the
+              ‘Identity Theft Recovery Plan’ to share on social media or
+              directly with clients. The user-friendly materials included
+              interactive features such as fill in boxes, e-signs and
+              checkboxes.
+            </p>
           </div>
-          <div className="content-image-duo">
-            <Img fluid={cm365Flyer2.childImageSharp.fluid} />
+          <div className="content-container max-width">
+            <div className="content-image-duo">
+              <Img fluid={cm365Flyer1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-duo">
+              <Img fluid={cm365Flyer2.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
-        <div className="content-container mt">
-          <div className="content-image-mobile">
-            <Img fluid={cm365Phone1.childImageSharp.fluid} />
+        <div className="content-column mt">
+          <div className="description-item max-width ml">
+            <h4>Social media posts</h4>
+            <p>
+              I designed reusable templates to showcase employees, bring
+              attention to news and also statistics through creative
+              infographics.
+            </p>
           </div>
-          <div className="content-image-mobile">
-            <Img fluid={cm365Phone2.childImageSharp.fluid} />
-          </div>
-          <div className="content-image-mobile">
-            <Img fluid={cm365Phone3.childImageSharp.fluid} />
+          <div className="content-container max-width">
+            <div className="content-image-mobile">
+              <Img fluid={cm365Phone1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-mobile">
+              <Img fluid={cm365Phone2.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-mobile">
+              <Img fluid={cm365Phone3.childImageSharp.fluid} />
+            </div>
           </div>
         </div>
       </section>

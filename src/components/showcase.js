@@ -93,7 +93,7 @@ const ShowcaseItem = ({ source, internal = true }) => {
             </span>
           )}
         </span>
-        <Overlay show={showOverlay} message={source.message} />
+        <Overlay show={true} message={source.message} />
       </div>
     </WrapperComponent>
   );

@@ -2161,6 +2161,10 @@ body.is-mobile {
   }
 }
 
+.content-showcase-image:hover .overlay-container {
+  opacity: 1;
+}
+
 .content-image-duo {
   width: 40%;
   height: 100%;
@@ -2192,8 +2196,17 @@ body.is-mobile {
   margin: 15px;
 
   @include breakpoint('<=small') {
-    width: 100%;
+    width: 80%;
     margin: 5px 0px;
+  }
+}
+
+.ml {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @include breakpoint('<=small') {
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 
@@ -2233,13 +2246,15 @@ body.is-mobile {
 
   position: absolute;
 
+  opacity: 0;
+
   background-color: rgba(0, 0, 0, 0.7);
 
   transition: opacity 0.5s ease;
 }
 
 .show {
-  opacity: 1;
+  // opacity: 1;
 }
 
 .hide {
@@ -2258,12 +2273,16 @@ body.is-mobile {
   display: flex;
   flex-direction: row;
   align-items: start;
-  justify-content: center;
+  justify-content: start;
 
   @include breakpoint('<=small') {
     flex-direction: column;
     justify-self: start;
   }
+}
+
+.auto-margin {
+  margin: auto;
 }
 
 .description-item {
@@ -2290,6 +2309,81 @@ body.is-mobile {
 }
 
 .link-icon {
+  @include breakpoint('<=small') {
+    width: 100%;
+  }
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+}
+
+.red {
+  background-color: #d02d2d;
+}
+
+.navy {
+  background-color: #181a35;
+}
+
+.maroon {
+  background-color: #b53643;
+}
+
+.grey {
+  background-color: #ededed;
+}
+
+.node-dark-blue {
+  background-color: #344a95;
+}
+
+.node-blue {
+  background-color: #4398d2;
+}
+
+.node-green {
+  background-color: #71ae5d;
+}
+
+.node-yellow {
+  background-color: #ebdb48;
+}
+
+.node-light-blue {
+  background-color: #76c0de;
+}
+
+.internal-padding {
+  padding: 5rem 1rem;
+}
+
+.row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mx {
+  margin: 12.5px 12.5px 0 12.5px;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.limit-width {
+  width: 400px;
+
   @include breakpoint('<=small') {
     width: 100%;
   }
