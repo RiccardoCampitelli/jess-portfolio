@@ -1495,8 +1495,8 @@ button,
 
   &.style5 {
     @include wrapper(accent7);
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    // padding-top: 5rem;
+
   }
 
   @include breakpoint('<=medium') {
@@ -2214,10 +2214,13 @@ body.is-mobile {
   margin-top: 6rem;
 }
 
-.main-image {
-  // img {
-  //   height: 400px;
-  // }
+.small-cait{
+  width: 30%;
+}
+
+.py{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .overlay {
@@ -2297,6 +2300,17 @@ body.is-mobile {
   }
 }
 
+.description-item-single {
+
+  margin: 20px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px 20px;
+  }
+}
+
 .description-ul {
   > li {
     margin-top: 15px;
@@ -2356,7 +2370,32 @@ body.is-mobile {
 }
 
 .internal-padding {
-  padding: 5rem 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.cait-brown {
+  background-color: #584818;
+}
+
+.cait-light-brown {
+  background-color: #a49785;
+}
+
+.cait-grey {
+  background-color: #bcbbbb;
+}
+
+.cait-red {
+  background-color: #b22e18;
+}
+
+.cait-orange {
+  background-color: #c06b0a;
+}
+
+.cait-green {
+  background-color: #36422d;
 }
 
 .row-center {
@@ -2373,6 +2412,41 @@ body.is-mobile {
   align-items: center;
 }
 
+.row-left-col-sm {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+
+  @include breakpoint('<=small') {
+    flex-direction: column;
+  }
+}
+
+.row-left-col-lg {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+
+  @include breakpoint('<large') {
+    flex-direction: column;
+  }
+}
+
+.row-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+.list {
+  list-style: none;
+  margin-right: auto;
+  padding: 0;
+}
+
 .mx {
   margin: 12.5px 12.5px 0 12.5px;
 }
@@ -2381,10 +2455,80 @@ body.is-mobile {
   width: 100%;
 }
 
+.single-image {
+  width: 50%;
+  // padding: 2rem;
+  @include breakpoint('<=small') {
+    width: 100%;
+  }
+}
+
+.p1{
+  padding: 2rem;
+}
+
+.reverse {
+  @include breakpoint('<=small') {
+    flex-direction: column-reverse;
+  }
+}
+
 .limit-width {
   width: 400px;
 
   @include breakpoint('<=small') {
     width: 100%;
   }
+}
+
+.pt {
+  padding-top: 6rem;
+}
+
+.image-description {
+  width: 50%;
+
+  padding: 6rem 20px 20px 20px;
+
+  @include breakpoint('<=small') {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px 20px;
+  }
+}
+
+.images-duo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+
+  width: 50%;
+
+  @include breakpoint('<=large') {
+    width: 100%;
+  }
+}
+
+.half {
+  width: 50%;
+  @include breakpoint('<=large') {
+    width: 100%;
+  }
+}
+
+.desc {
+  width: 30rem;
+  @include breakpoint('<=large') {
+    width: 100%;
+  }
+}
+
+
+.cyberman-img{
+  width: 70% !important;
+}
+
+.full-width{
+  width: 100%;
 }

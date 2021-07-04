@@ -103,19 +103,21 @@ const Cyberman = () => {
         </Scroll>
       </section>
       <section id="two" className="wrapper alt style5">
-        <div className="inner">
-          <span className="image fit">
-            <Img fluid={cm365Header.childImageSharp.fluid} />
-          </span>
+        <div className="full-width grey">
+          <div className="row">
+            <span className="image fit cyberman-img">
+              <Img fluid={cm365Header.childImageSharp.fluid} />
+            </span>
+          </div>
         </div>
-        <article>
+        <article className="py">
           <h2 className="title">Cyberman365</h2>
           <h5 className="title">
             Visual Identity and branding | Editorial and Marketing | Web
             design/UX &amp; UI | Social media
           </h5>
 
-          <div className="description-container-row margin-top">
+          <div className="description-container-row margin-top ml">
             <div className="description-item">
               <h4>Brief</h4>
               <p>
@@ -139,7 +141,7 @@ const Cyberman = () => {
             </div>
           </div>
 
-          <div className="description-container-row">
+          <div className="description-container-row ml">
             <div className="description-item">
               <h4>Challenges</h4>
               <p>
