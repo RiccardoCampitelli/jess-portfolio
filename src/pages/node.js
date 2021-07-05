@@ -92,7 +92,7 @@ const Node = () => {
           </h5>
 
           <div className="description-container-row margin-top ml">
-            <div className="description-item">
+            <div className="description-item-single">
               <h4>Brief</h4>
               <p>
                 Node International is a cyber insurance start-up, based in
@@ -103,47 +103,10 @@ const Node = () => {
                 in-house designer.
               </p>
             </div>
-            <div className="description-item">
-              <h4>Unique Solution</h4>
-              <p>
-                To enable Node to stand out from the crowd in a saturated market
-                with a strong digital presence, a USP by providing additional
-                prevention and detection, and user-friendly designs, bringing
-                insurance to the 20th century. Delivered through brand
-                guidelines, a responsive website, interactive pdfs, social media
-                graphics and more with consistent online branding.
-              </p>
-            </div>
           </div>
 
           <div className="description-container-row ml">
-            <div className="description-item">
-              <h4>Challenges</h4>
-              <p>
-                <ul className="description-ul">
-                  <li>
-                    Communicating Node’s values and a clear message was
-                    important when creating their branding strategy. There was a
-                    fine balance between differentiating in an over-saturated
-                    market and instilling trust and reliability, the latter is
-                    essential in insurance.
-                  </li>
-                  <li>
-                    For the marketing materials, I’d already defined the
-                    guidelines, so they weren’t too tricky to create. However,
-                    deciding what materials were needed with the Sales and
-                    Underwriting team was more of a task.
-                  </li>
-                  <li>
-                    45 days to complete a website overhaul, new design, site map
-                    including copy, created in Wordpress (which I quickly learnt
-                    on the job) so it was more accessible for employees who
-                    don’t know code.
-                  </li>
-                </ul>
-              </p>
-            </div>
-            <div className="description-item">
+            <div className="description-item-single">
               <h4>The Result</h4>
               <p>
                 <ul className="description-ul">
@@ -182,14 +145,12 @@ const Node = () => {
             <div className="description-item">
               <h4>Branding</h4>
               <p>
-                Through my research, I discovered that the blue logo colour is
-                common with insurance companies, so I differentiated with unique
+                Through my research, I found that the blue logo colour is common
+                with insurance companies, so I differentiated with unique
                 complementary colours, highlighting the added value of
-                Prevention and Detection alongside Insurance. The colours
-                reflect responsibility and reliability, essential for an
-                insurance company combined with a lighter blue, green and yellow
-                to show a more light-hearted, forward-thinking, less traditional
-                side.
+                Prevention and Detection alongside Insurance. There was a fine
+                balance between differentiating in an over-saturated market and
+                instilling trust and reliability.
               </p>
             </div>
             <div className="content-column auto-margin">
@@ -211,7 +172,11 @@ const Node = () => {
             <p>
               Considering UX and UI principles, I overhauled the old website
               with a new site map, responsive design and branding to reflect the
-              new guidelines.
+              new guidelines. As a result, the website now receives triple the
+              number of web impressions. 45 days to complete a website overhaul,
+              new design, site map including copy, created in Wordpress (which I
+              quickly learnt on the job) so it was more accessible for employees
+              who don’t know code.
             </p>
           </div>
           <div className="content-container max-width">
@@ -231,7 +196,9 @@ const Node = () => {
               direction and consistency. I created over 20 files in just 2
               months, alongside other tasks. This empowered the Sales team to
               increase submissions and to be professional when issuing policy
-              documents to customers.
+              documents to customers. The interactive documents were user
+              friendly, e.g. a linked contents page for the 50+ page ‘Policy
+              wording’ and e-signs.
             </p>
           </div>
           <div className="content-container max-width">

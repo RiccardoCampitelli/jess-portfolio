@@ -118,7 +118,7 @@ const Cyberman = () => {
           </h5>
 
           <div className="description-container-row margin-top ml">
-            <div className="description-item">
+            <div className="description-item-single">
               <h4>Brief</h4>
               <p>
                 Cyberman365 is a personal cyber insurance product from Node
@@ -128,49 +128,10 @@ const Cyberman = () => {
                 in-house designer.
               </p>
             </div>
-            <div className="description-item">
-              <h4>Unique Solution</h4>
-              <p>
-                There were no other known competitors for the HomeSafe (similar
-                to antivirus but for household internet-connected devices) side
-                of the product so this was a chance to stand out using product
-                mock-ups. I delivered brand identity and guidelines, marketing
-                editorial materials, digital assets such as social media and
-                responsive landing pages, one for brokers and one for consumers.
-              </p>
-            </div>
           </div>
 
           <div className="description-container-row ml">
-            <div className="description-item">
-              <h4>Challenges</h4>
-              <p>
-                <ul className="description-ul">
-                  <li>
-                    Cyberman365 needed a clear message and visual identity,
-                    ensuring the potential customer understood the product as
-                    personal cyber insurance isn’t well known. The logo colour
-                    was a challenge to match as a colour that often clashes with
-                    others.
-                  </li>
-                  <li>
-                    Cyberman365 uses external partners to provide their services
-                    but one of the services wasn’t white labelled. This
-                    turquoise partner branding was sure to confuse customers.
-                    Unfortunately, this couldn’t be avoided due to a tight
-                    budget so as a compromised I suggested including the
-                    Cyberman365 logo.
-                  </li>
-                  <li>
-                    After creating marketing materials, based on broker
-                    interviews on their sales process, they were slow in getting
-                    the product off the ground. This slow adaption of new
-                    products is common across the industry.
-                  </li>
-                </ul>
-              </p>
-            </div>
-            <div className="description-item">
+            <div className="description-item-single">
               <h4>The Result</h4>
               <p>
                 <ul className="description-ul">
@@ -204,11 +165,11 @@ const Cyberman = () => {
             <div className="description-item">
               <h4>Branding</h4>
               <p>
-                Cyberman365 is a personal cyber insurance product from Node
-                International, a cyber insurance company, for the American
-                market. The task was to create all the materials needed to
-                launch in 6 months and then ongoing support. I worked here as an
-                in-house designer.
+                The product consists of two separately sold services reflected
+                in the colour choice. Red for IDNotify (identity theft
+                protection) and midnight blue for HomeSafe internet-connected
+                household devices cyber protection. The gradient is to be used
+                for the product as a whole.
               </p>
             </div>
             <div className="content-column auto-margin">
@@ -224,11 +185,10 @@ const Cyberman = () => {
           <div className="description-item max-width ml">
             <h4>Landing page UX and UI</h4>
             <p>
-              The landing page shows the services through product mockups so the
-              consumer has more trust that the product is designed well. High
-              contrasting colours help the information stand out. We enabled
-              brokers to add their logo on this page so that clients would have
-              trust in the landing page.
+              The landing page includes product mock-ups to communicate to
+              product well. High contrasting colours help the information stand
+              out. We enabled brokers to add their logo on this page so that
+              clients would have trust in the landing page.
             </p>
           </div>
           <div className="content-container max-width">
