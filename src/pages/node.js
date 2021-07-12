@@ -44,6 +44,27 @@ const query = graphql`
         }
       }
     }
+    nodePhone1: file(relativePath: { eq: "node-phone-1.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    nodePhone2: file(relativePath: { eq: "node-phone-2.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    nodePhone3: file(relativePath: { eq: "node-phone-3.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -54,6 +75,9 @@ const Node = () => {
     nodeWeb2,
     nodePoster1,
     nodePoster2,
+    nodePhone1,
+    nodePhone2,
+    nodePhone3
   } = useStaticQuery(query);
   return (
     <Layout>
@@ -207,6 +231,27 @@ const Node = () => {
             </div>
             <div className="content-image-duo">
               <Img fluid={nodePoster2.childImageSharp.fluid} />
+            </div>
+          </div>
+        </div>
+        <div className="content-column mt">
+          <div className="description-item max-width ml">
+            <h4>Social media posts</h4>
+            <p>
+              Creating social media LinkedIn graphics that inspired likes,
+              shares and comments. Infographics were a fan favourite. Reusable
+              templates with brand designs and colours.
+            </p>
+          </div>
+          <div className="content-container max-width">
+            <div className="content-image-mobile">
+              <Img fluid={nodePhone1.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-mobile">
+              <Img fluid={nodePhone2.childImageSharp.fluid} />
+            </div>
+            <div className="content-image-mobile">
+              <Img fluid={nodePhone3.childImageSharp.fluid} />
             </div>
           </div>
         </div>

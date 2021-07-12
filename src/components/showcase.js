@@ -34,6 +34,13 @@ const query = graphql`
         }
       }
     }
+    fhHeader: file(relativePath: { eq: "fh-header.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -100,7 +107,7 @@ const ShowcaseItem = ({ source, internal = true }) => {
 };
 
 const Showcase = () => {
-  const { nodeHeader, cm365Header, cgHeader, safariHeader } = useStaticQuery(
+  const { nodeHeader, cm365Header, cgHeader, safariHeader, fhHeader } = useStaticQuery(
     query
   );
 
@@ -112,14 +119,19 @@ const Showcase = () => {
     },
     {
       image: cm365Header,
-      path: 'cyberman',
+      path: 'cyberman365',
       message: 'Web, Digital, Print & Branding',
     },
     {
       image: cgHeader,
-      path: 'caitlinghallagher',
+      path: 'caitlingallagher',
       message: 'Logo Design & Branding',
     },
+    {
+      image: fhHeader,
+      path:'forestholidays',
+      message: 'Digital Design'
+    }
   ];
 
   return (

@@ -23,7 +23,7 @@ const IndexPage = () => {
       </section>
 
       <section id="two" className="wrapper alt style5">
-        <div className="inner">
+        <div className="inner py">
           <Showcase />
         </div>
       </section>

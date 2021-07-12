@@ -2532,3 +2532,17 @@ body.is-mobile {
 .full-width{
   width: 100%;
 }
+
+.forest-img{
+  width: 400px;
+  @include breakpoint('<=small') {
+    width: 80%;
+  }
+}
+
+.forest-img-2{
+  width: 600px;
+  @include breakpoint('<=small') {
+    width: 80%;
+  }
+}
