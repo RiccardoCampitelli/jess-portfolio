@@ -79,7 +79,7 @@ const ForestHoliday = () => {
           <h2 className="title">Forest Holidays</h2>
         </article>
 
-        <div className="description-container-row margin-top ml">
+        <div className="description-container-row  ml">
           <div className="description-item-single">
             <h4>Brief</h4>
             <p>

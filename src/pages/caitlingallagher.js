@@ -139,7 +139,11 @@ const CaitlinGallagher = () => {
               <div className="description-item ml">
                 <h4>Main Logo</h4>
                 <p className="desc">
-                  As the logo will be seen primarily on Instagram and YouTube,
+                  Created to reflect Caitlin’s personality and her brand as a
+                  book reviewer. Combining illustration, images and vectors in a
+                  logo design felt like a risk but it paid off, combining
+                  elements of reality and fantasy, much as a reader gets lost in
+                  a book. As the business is primarily on Instagram and YouTube,
                   this logo is a better fit for profile pictures.
                 </p>
               </div>
@@ -175,7 +179,7 @@ const CaitlinGallagher = () => {
         <article>
           <div className="row-left-col-lg">
             <div>
-              <div className="description-item ml">
+              <div className="description-item ml py">
                 <h4>Colour Palette</h4>
                 <p>
                   I created the colour palette from nature. Imagine a forest
@@ -239,12 +243,11 @@ const CaitlinGallagher = () => {
                 <Img fluid={cg3.childImageSharp.fluid} />
               </div>
               <div className="image-description ml pt">
-                <h4>YouTube Thumbnail</h4>
+                <h4>Social Media Graphic</h4>
                 <p>
-                  Combining images with illustrations and typeface remains a
-                  common theme. This is an introductory thumbnail and as she
-                  reviews books the text will change to the name of the book
-                  being reviewed.
+                  Using a template like this enforces brand recognition and is
+                  an easy way to brand simple photos quickly, keeping the feed
+                  cohesive and attractive.
                 </p>
               </div>
             </div>

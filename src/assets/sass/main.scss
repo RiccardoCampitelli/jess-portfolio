@@ -2534,7 +2534,7 @@ body.is-mobile {
 }
 
 .forest-img{
-  width: 400px;
+  width: 300px;
   @include breakpoint('<=small') {
     width: 80%;
   }
