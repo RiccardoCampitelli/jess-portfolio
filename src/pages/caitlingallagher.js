@@ -101,7 +101,7 @@ const CaitlinGallagher = () => {
       <section id="two" className="wrapper alt style5">
         <div className="content-container grey">
           <div className="content-image-duo small-cait ">
-            <span className="image fit">
+            <span className="image fit paddingY">
               <Img fluid={cgHeader.childImageSharp.fluid} />
             </span>
           </div>
@@ -225,7 +225,7 @@ const CaitlinGallagher = () => {
         <article>
           <div>
             <div className="row-left-col-sm grey">
-              <div className="image-description ml pt">
+              <div className="image-description ml paddingY">
                 <h4>YouTube Thumbnail</h4>
                 <p>
                   Combining images with illustrations and typeface remains a
@@ -242,7 +242,7 @@ const CaitlinGallagher = () => {
               <div className="single-image">
                 <Img fluid={cg3.childImageSharp.fluid} />
               </div>
-              <div className="image-description ml pt">
+              <div className="image-description ml paddingY">
                 <h4>Social Media Graphic</h4>
                 <p>
                   Using a template like this enforces brand recognition and is
