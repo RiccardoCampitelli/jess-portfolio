@@ -41,6 +41,13 @@ const query = graphql`
         }
       }
     }
+    daisyHeader: file(relativePath: { eq: "daisy-box.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `;
 
@@ -107,9 +114,14 @@ const ShowcaseItem = ({ source, internal = true }) => {
 };
 
 const Showcase = () => {
-  const { nodeHeader, cm365Header, cgHeader, safariHeader, fhHeader } = useStaticQuery(
-    query
-  );
+  const {
+    nodeHeader,
+    cm365Header,
+    cgHeader,
+    safariHeader,
+    fhHeader,
+    daisyHeader,
+  } = useStaticQuery(query);
 
   const images = [
     {
@@ -123,15 +135,20 @@ const Showcase = () => {
       message: 'Web, Digital, Print & Branding',
     },
     {
+      image: daisyHeader,
+      path: 'daisy',
+      message: 'Digital Email & Packaging',
+    },
+    {
       image: cgHeader,
       path: 'caitlingallagher',
       message: 'Logo Design & Branding',
     },
     {
       image: fhHeader,
-      path:'forestholidays',
-      message: 'Digital Design'
-    }
+      path: 'forestholidays',
+      message: 'Digital Design',
+    },
   ];
 
   return (
