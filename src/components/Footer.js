@@ -17,16 +17,6 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>
-          Made with ♥️ by{' '}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/RiccardoCampitelli"
-          >
-            Riccardo Campitelli
-          </a>
-        </li>
       </ul>
     </footer>
   );

@@ -137,7 +137,7 @@ const Showcase = () => {
     {
       image: daisyHeader,
       path: 'daisy',
-      message: 'Digital Email & Packaging',
+      message: 'Digital, Email & Packaging',
     },
     {
       image: cgHeader,

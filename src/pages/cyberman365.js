@@ -83,7 +83,7 @@ const Cyberman = () => {
     <Layout>
       <section id="banner">
         <div className="inner">
-          <h2>Cyberman</h2>
+          <h2>Cyberman365</h2>
         </div>
         <div className="content-container">
           <Link to="/">
